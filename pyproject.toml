@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "process-context-mcp"
+version = "0.1.0"
+description = "MCP server that gives AI agents structured context about business processes, steps and responsible roles."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Meshaal Al-Harthy" }]
+dependencies = [
+    "mcp>=2.3,<3",
+    "pydantic>=2.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+process-context-mcp = "process_context_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/process_context_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

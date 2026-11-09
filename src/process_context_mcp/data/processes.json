@@ -1,0 +1,39 @@
+[
+  {
+    "id": "data-subject-request",
+    "name": "Data Subject Request Handling",
+    "description": "Handles requests from individuals to access, correct or delete their personal data.",
+    "owner": "Privacy Officer",
+    "steps": [
+      {"order": 1, "name": "Receive request", "role": "Service Desk"},
+      {"order": 2, "name": "Verify identity", "role": "Privacy Officer"},
+      {"order": 3, "name": "Collect data", "role": "Data Owner"},
+      {"order": 4, "name": "Approve and respond", "role": "Privacy Officer"}
+    ]
+  },
+  {
+    "id": "access-provisioning",
+    "name": "User Access Provisioning",
+    "description": "Grants employees access to systems and data based on their role and clearance.",
+    "owner": "IT Security Manager",
+    "steps": [
+      {"order": 1, "name": "Submit access request", "role": "Employee"},
+      {"order": 2, "name": "Approve business need", "role": "Line Manager"},
+      {"order": 3, "name": "Review clearance level", "role": "Data Owner"},
+      {"order": 4, "name": "Grant access", "role": "IT Administrator"}
+    ]
+  },
+  {
+    "id": "breach-notification",
+    "name": "Personal Data Breach Notification",
+    "description": "Assesses a personal data breach and notifies the regulator and affected individuals.",
+    "owner": "Data Protection Officer",
+    "steps": [
+      {"order": 1, "name": "Report incident", "role": "Employee"},
+      {"order": 2, "name": "Assess impact", "role": "Data Protection Officer"},
+      {"order": 3, "name": "Contain breach", "role": "IT Security Manager"},
+      {"order": 4, "name": "Notify regulator", "role": "Data Protection Officer"},
+      {"order": 5, "name": "Inform affected individuals", "role": "Privacy Officer"}
+    ]
+  }
+]
